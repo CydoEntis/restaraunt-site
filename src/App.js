@@ -1,13 +1,17 @@
 import './App.css';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+import { useState } from 'react';
+
 import Nav from './components/nav/Nav';
 import NavMenu from './components/nav/NavMenu';
 import NavItem from './components/nav/NavItem';
 import NavBar from './components/nav/NavBar';
-import { useState } from 'react';
+
+import Home from './pages/Home';
 import About from './pages/About';
 import Menu from './pages/Menu';
 import Contact from './pages/Contact';
+import Careers from './pages/Careers';
 
 const App = () => {
 	const [isNavOpen, setIsNavOpen] = useState(false);
@@ -51,6 +55,9 @@ const App = () => {
 			)}
 			{!isNavOpen && (
 				<Switch>
+					<Route path="/" exact>
+						<Home />
+					</Route>
 					<Route path="/about">
 						<About />
 					</Route>
@@ -60,7 +67,9 @@ const App = () => {
 					<Route path="/contact">
 						<Contact />
 					</Route>
-					<Route path="/menu/:menu-type"></Route>
+					<Route path="/careers">
+						<Careers />
+					</Route>
 				</Switch>
 			)}
 		</Router>

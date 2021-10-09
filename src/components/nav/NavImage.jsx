@@ -8,7 +8,9 @@ const NavImage = ({ to, src, text }) => {
 				<div className="img-wrapper">
 					<img src={src} alt="" />
 				</div>
-				<h2 className="text-center text-3xl uppercase font-elite p-4">{text}</h2>
+				<h2 className="text-center text-3xl uppercase font-elite p-4 hover:text-secondary">
+					{text}
+				</h2>
 			</div>
 		</Link>
 	);

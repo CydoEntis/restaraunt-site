@@ -12,6 +12,7 @@ import About from './pages/About';
 import Menu from './pages/Menu';
 import Contact from './pages/Contact';
 import Careers from './pages/Careers';
+import ScrollToTop from './helpers/ScrollToTop.jsx';
 
 const App = () => {
 	const [isNavOpen, setIsNavOpen] = useState(false);
@@ -33,6 +34,7 @@ const App = () => {
 
 	return (
 		<Router>
+			<ScrollToTop />
 			<NavBar onClick={toggleMenu} navBarColor={navBarColor} barsColor={barsColor} />
 			{isNavOpen && (
 				<Nav className={fadeState}>

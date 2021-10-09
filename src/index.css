@@ -38,6 +38,7 @@
 .hero-image {
 	margin: 0 auto;
 	width: 50%;
+	max-width: 196px;
 	height: 50%;
 }
 

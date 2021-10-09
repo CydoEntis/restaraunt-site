@@ -3,6 +3,7 @@ import React from 'react';
 import NavImage from '../components/nav/NavImage';
 
 import food from '../assets/images/food-on-fork.png';
+import Footer from '../components/footer/Footer';
 
 const TEMP = [
 	{
@@ -38,6 +39,7 @@ const Home = () => {
 					<NavImage key={index} src={item.src} text={item.text} to={item.to} />
 				))}
 			</div>
+			<Footer />
 		</section>
 	);
 };

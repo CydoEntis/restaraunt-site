@@ -9,17 +9,17 @@ const aboutUs = [
 const menu = [{ to: '/menu', text: 'Menu' }];
 const contact = [{ to: '/contact', text: 'Contact' }];
 
-const socials = [
-	{ to: 'https://www.facebook.com/', text: 'Facebook' },
-	{ to: 'https://www.instagram.com/?hl=en', text: 'Instagram' },
-	{ to: 'https://twitter.com/?lang=en', text: 'Twitter' },
-];
+// const socials = [
+// 	{ to: 'https://www.facebook.com/', text: 'Facebook' },
+// 	{ to: 'https://www.instagram.com/?hl=en', text: 'Instagram' },
+// 	{ to: 'https://twitter.com/?lang=en', text: 'Twitter' },
+// ];
 // const aboutUs = [{ to: '/about', text: 'About' }];
 // const aboutUs = [{ to: '/about', text: 'About' }];
 
 const Footer = () => {
 	return (
-		<div className="m-4 font-elite border-t-2 border-black">
+		<div className="p-4 font-elite  border-black w-screen">
 			<FooterSection title={'Menus'} links={menu} />
 			<FooterSection title={'About Us'} links={aboutUs} />
 			<FooterSection title={'Contact'} links={contact} />

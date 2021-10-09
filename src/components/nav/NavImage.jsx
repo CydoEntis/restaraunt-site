@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const NavImage = ({ to, src, text }) => {
 	return (
 		<Link className="cursor-pointer hover:opacity-70" to={to}>
-			<div>
+			<div className="test">
 				<div className="img-wrapper">
 					<img src={src} alt="" />
 				</div>

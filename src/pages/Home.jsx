@@ -25,7 +25,7 @@ const TEMP = [
 
 const Home = () => {
 	return (
-		<section>
+		<section className="w-full overflow-hidden">
 			<div className="relative w-screen h-screen flex flex-col justify-between overflow-hidden">
 				<div className="pt-32 w-full text-center font-elite">
 					<h2 className="text-6xl capitalize py-2">Feel</h2>
@@ -34,7 +34,7 @@ const Home = () => {
 				</div>
 				<img className="hero-image" src={food} alt="" />
 			</div>
-			<div className="py-10 px-4">
+			<div className="py-10 w-screen link-wrapper overflow-hidden">
 				{TEMP.map((item, index) => (
 					<NavImage key={index} src={item.src} text={item.text} to={item.to} />
 				))}

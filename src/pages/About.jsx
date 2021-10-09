@@ -30,7 +30,7 @@ const TEMP = [
 ];
 const About = () => {
 	return (
-		<section className="bg-primary">
+		<section className="w-screen bg-primary">
 			<div>
 				<HeroImage
 					src={'https://miro.medium.com/max/11192/0*da7aKNrewcGK1osR'}
@@ -43,7 +43,7 @@ const About = () => {
 					<Description key={index} text={item} />
 				))}
 			</div>
-			<div className="p-4">
+			<div className="p-4 link-wrapper">
 				{TEMP.map((item, index) => (
 					<NavImage key={index} src={item.src} text={item.text} to={item.to} />
 				))}

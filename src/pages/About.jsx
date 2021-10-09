@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../components/footer/Footer';
 import HeroImage from '../components/hero/HeroImage';
 import NavImage from '../components/nav/NavImage';
 import Description from '../components/text/Description';
@@ -47,6 +48,7 @@ const About = () => {
 					<NavImage key={index} src={item.src} text={item.text} to={item.to} />
 				))}
 			</div>
+			<Footer />
 		</section>
 	);
 };

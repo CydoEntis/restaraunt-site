@@ -7,6 +7,7 @@ const aboutUs = [
 ];
 
 const menu = [{ to: '/menu', text: 'Menu' }];
+const contact = [{ to: '/contact', text: 'Contact' }];
 
 const socials = [
 	{ to: 'https://www.facebook.com/', text: 'Facebook' },
@@ -21,7 +22,7 @@ const Footer = () => {
 		<div className="m-4 font-elite border-t-2 border-black">
 			<FooterSection title={'Menus'} links={menu} />
 			<FooterSection title={'About Us'} links={aboutUs} />
-			<FooterSection title={'Socials'} links={socials} />
+			<FooterSection title={'Contact'} links={contact} />
 		</div>
 	);
 };

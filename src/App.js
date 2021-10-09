@@ -22,6 +22,10 @@ const App = () => {
 		setIsNavOpen((prevState) => !prevState);
 	};
 
+	const closeMenu = () => {
+		setIsNavOpen(false);
+	};
+
 	let navBarColor, barsColor;
 
 	if (isNavOpen) {
@@ -35,11 +39,19 @@ const App = () => {
 	return (
 		<Router>
 			<ScrollToTop />
-			<NavBar onClick={toggleMenu} navBarColor={navBarColor} barsColor={barsColor} />
+			<NavBar
+				onToggle={toggleMenu}
+				onClose={closeMenu}
+				navBarColor={navBarColor}
+				barsColor={barsColor}
+			/>
 			{isNavOpen && (
 				<Nav className={fadeState}>
 					<div className="nav" />
 					<NavMenu>
+						<NavItem to="/" onClick={toggleMenu}>
+							Home
+						</NavItem>
 						<NavItem to="/about" onClick={toggleMenu}>
 							About
 						</NavItem>
